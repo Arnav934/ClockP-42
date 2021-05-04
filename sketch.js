@@ -17,7 +17,7 @@ function draw() {
   minuteAngle = map(mn, 0, 60, 0, 360);
   hourAngle = map(hr%12, 0, 12, 0, 360)
   push();
-  stroke(133,0,0);
+  stroke("red");
   strokeWeight(8);
   rotate(secondAngle);
   line(0,0,100,0);
@@ -29,7 +29,7 @@ function draw() {
   line(0,0,75,0);
   pop();
   push();
-  stroke(0,255,0);
+  stroke("yellow");
   strokeWeight(8);
   rotate(hourAngle);
   line(0,0,50,0);
@@ -39,9 +39,9 @@ function draw() {
   //drawing the arcs 
   strokeWeight(10); noFill(); 
   //Seconds 
-  stroke(255,0,0); arc(0,0,300,300,0,secondAngle); 
+  stroke("red"); arc(0,0,300,300,0,secondAngle); 
   //Minutes 
-  stroke(0,0,255); arc(0,0,280,280,0,minuteAngle); 
+  stroke("blue"); arc(0,0,280,280,0,minuteAngle); 
   //Hour 
-  stroke(0,255,0); arc(0,0,260,260,0,hourAngle);
+  stroke("yellow"); arc(0,0,260,260,0,hourAngle);
 }
