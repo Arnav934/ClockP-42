@@ -29,7 +29,7 @@ function draw() {
   line(0,0,75,0);
   pop();
   push();
-  stroke("yellow");
+  stroke(0,255,0);
   strokeWeight(8);
   rotate(hourAngle);
   line(0,0,50,0);
@@ -41,7 +41,7 @@ function draw() {
   //Seconds 
   stroke(255,0,0); arc(0,0,300,300,0,secondAngle); 
   //Minutes 
-  stroke(0,255,0); arc(0,0,280,280,0,minuteAngle); 
+  stroke(0,0,255); arc(0,0,280,280,0,minuteAngle); 
   //Hour 
-  stroke(0,0,255); arc(0,0,260,260,0,hourAngle);
+  stroke(0,255,0); arc(0,0,260,260,0,hourAngle);
 }
